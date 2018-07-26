@@ -1,0 +1,92 @@
+<html>
+<head>
+  <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
+  <link href="mycss.css" rel="stylesheet" type="text/css">
+
+  <!-- JavaScript -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+    <script src="myjs.js"></script>
+    
+
+</head>
+
+<body>
+<h1>Quote Calculator</h1>
+<h2>Find the total price of the item:</h2>
+
+<div id="form-box">
+<form>
+  <div>
+    <span>Type:</span> 
+      <select name="type">
+          <option value="elec">Electronics</option>
+          <option value="clot">Clothing</option>
+          <option value="game">Game</option>
+          <option value="other">Other</option>
+      </select>
+  </div>
+  
+  <div>
+    <span>Name:</span> <input type="text" name="item-name" placeholder="What is the product called?">
+  </div>
+  
+  <div>
+    <span>Quantity</span> <input name="quan" type="number" placeholder="Number of items required">
+  </div>
+  
+  <div>
+    <span>Price:</span> <input type="number" name="amount" placeholder="Whats original cost of product?">
+  </div>
+
+  <div>
+    <span>Shipping Country:</span> 
+      <select name="country">
+          <option value="CH">China</option>
+          <option value="IND">India</option>
+          <option value="UK">United Kingdom</option>
+          <option value="FR">France</option>
+      </select>
+  </div>
+  
+  <div>
+    <span>Approx Box size:</span> 
+      <select name="size">
+          <option value="s">Small (Phones)</option>
+          <option value="m">Medium (Shoes)</option>
+          <option value="l">Large (Laptops)</option>
+      </select>
+  </div>
+
+</form>
+</div>
+
+
+
+<div id="button"><span>Find Total Cost</span></div>
+
+
+
+<table class="alpha">
+  <tr>
+    <th colspan="2" class="center"> Price Quotation </th>
+  </tr>
+  <tr id="if-empty">
+    <td colspan="2"><span>Your estimated total will show up here!</span></td>
+  </tr>
+
+</table>
+
+
+<!--     <th id="type" class="center">Type</th>
+    <th>Name</th>
+    <th id="date">Date</th>
+    <th id="cat">Category</th>
+    <th style="text-align: right" id="amount">Amount</th> -->
+  
+
+</table>
+
+
+</body>
+</html>
+
